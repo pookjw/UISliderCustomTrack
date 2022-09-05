@@ -44,7 +44,7 @@
     UIView *_minTrackClipView = [self valueForKey:@"_minTrackClipView"];
     UIView *_maxTrackClipView = [self valueForKey:@"_maxTrackClipView"];
     
-    UIImageView *minTrackView = ((UIImageView * (*)(UIView *, SEL))objc_msgSend)(self, NSSelectorFromString(@"minTrackView"));
+//    UIImageView *minTrackView = ((UIImageView * (*)(UIView *, SEL))objc_msgSend)(self, NSSelectorFromString(@"minTrackView"));
     UIImageView *maxTrackView = ((UIImageView * (*)(UIView *, SEL))objc_msgSend)(self, NSSelectorFromString(@"maxTrackView"));
     
     float totalWidth = _minTrackClipView.frame.size.width + _maxTrackClipView.frame.size.width;
