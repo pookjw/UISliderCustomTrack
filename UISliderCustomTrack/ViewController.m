@@ -70,7 +70,6 @@
     slider.maximumValue = 1.0f;
     slider.value = 0.0f;
     slider.trackLocatedAtTheCenter = YES;
-    [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventAllEvents];
     [vibrancyView.contentView addSubview:slider];
     slider.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
@@ -80,10 +79,6 @@
     ]];
     [vibrancyView release];
     [slider release];
-}
-
-- (void)sliderValueChanged:(UISlider *)sender {
-//    NSLog(@"sliderValueChanged:%@", sender);
 }
 
 @end
